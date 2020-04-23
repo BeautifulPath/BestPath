@@ -1,0 +1,81 @@
+@import "reset.css";
+
+:root {
+  --main-blue: #67b7ec;
+  --main-white: #f7f5f5;
+  --main-black: #202020;
+  --main-shasow-color: rgba(0, 0, 0, 0.247)
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, var(--main-blue) 50%, var(--main-white) 50%);
+}
+
+.question {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: var(--main-black);
+  font-size: 5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: var(--main-shasow-color) 4px 4px;
+}
+
+.bg-left .frontTitle {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  margin: 0;
+  color: var(--main-white);
+  font-size: 7vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: solid 4px;
+  border-radius: 10px;
+}
+
+.bg-left .frontTitle:hover {
+  cursor: pointer;
+  color: var(--main-black);
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%) scale(1.02);
+  transition-duration: 0.5s;
+}
+
+.bg-right .backTitle {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  margin: 0;
+  color: var(--main-blue);
+  font-size: 7vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: solid 4px;
+  border-radius: 10px;
+}
+
+.bg-right .backTitle:hover {
+  cursor: pointer;
+  color: var(--main-black);
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%) scale(1.02);
+  transition-duration: 0.5s;
+}
